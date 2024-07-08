@@ -1,7 +1,6 @@
 from collections import deque
 from colorama import Fore, Style, init
 
-# Ініціалізація colorama
 init()
 
 class Stack:
