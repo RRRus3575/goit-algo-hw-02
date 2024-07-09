@@ -13,8 +13,9 @@ def is_palindrome(str):
 
 def main():
     stroke = input("Take stroke: ")
+    cleaned_stroke = ''.join(char.lower() for char in stroke if char.isalnum())
 
-    if is_palindrome(stroke):
+    if is_palindrome(cleaned_stroke):
         print(Fore.GREEN + f'The stroke "{stroke}" is a palindrome.' + Style.RESET_ALL)
     else:
         print(Fore.RED + f'The stroke "{stroke}" is not a palindrome.' + Style.RESET_ALL)
